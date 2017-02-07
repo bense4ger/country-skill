@@ -1,0 +1,29 @@
+{
+  "name": "country-skill",
+  "version": "1.0.0",
+  "description": "A simple Alexa skill",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bense4ger/country-skill.git"
+  },
+  "author": "Ben Seager",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bense4ger/country-skill/issues"
+  },
+  "homepage": "https://github.com/bense4ger/country-skill#readme",
+  "dependencies": {
+    "alexa-sdk": "^1.0.6",
+    "lodash": "^4.17.4",
+    "request": "^2.79.0"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "jasmine": "^2.5.3",
+    "nock": "^9.0.3"
+  }
+}
