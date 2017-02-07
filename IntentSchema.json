@@ -1,0 +1,19 @@
+{
+  "intents": [
+    {
+      "intent": "GetCapitalIntent", "slots": [{ "name": "country", "type": "AMAZON.STRING" }]
+    },
+    {
+      "intent": "GetCountryIntent", "slots": [{ "name": "capital", "type": "AMAZON.STRING" }]
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
+}

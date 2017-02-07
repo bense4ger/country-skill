@@ -9,9 +9,9 @@ describe('getCapitalByCountry', () => {
         const notFoundResource = `/${resources.paths.getCountry}/bar`;
         const errResource = `/${resources.paths.getCountry}/err`;
 
-        const found = nock(resources.base).get(foundResource).reply(200, [{ capital: "London" }]);
-        const notFound = nock(resources.base).get(notFoundResource).reply(404, { status: 404, message: "Not Found" });
-        const error = nock(resources.base).get(errResource).reply(500);
+        nock(resources.base).get(foundResource).reply(200, [{ capital: "London" }]);
+        nock(resources.base).get(notFoundResource).reply(404, { status: 404, message: "Not Found" });
+        nock(resources.base).get(errResource).reply(500);
     });
     it('should return a string if a country is found', (done) => {
         requester.getCapitalByCountry('foo')

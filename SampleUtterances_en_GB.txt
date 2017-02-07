@@ -1,0 +1,13 @@
+GetCapitalIntent what is the capital of {country}
+GetCapitalIntent what is the capital city of {country}
+GetCapitalIntent what's the capital city of {country}
+GetCapitalIntent what's the capital of {country}
+GetCapitalIntent what the capital of {country} is
+GetCapitalIntent what the capital city of {country} is
+
+GetCountryIntent what country has the capital {country}
+GetCountryIntent what country has the capital city {country}
+GetCountryIntent the city {capital} is the capital of which country
+GetCountryIntent the city {capital} is the capital city of which country
+GetCountryIntent {capital} is the capital of which country
+GetCountryIntent {capital} is the capital city of which country
