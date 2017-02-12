@@ -2,7 +2,7 @@ language: node_js
 node_js: '4.3'
 deploy:
   provider: lambda
-  runtime: node
+  runtime: nodejs4.3
   function_name: CountrySkill
   role: arn:aws:iam::503962799038:role/service-role/lambda_basic_execution
   handler_name: index.handler
