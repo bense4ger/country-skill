@@ -5,8 +5,8 @@ GetCapitalIntent what's the capital of {country}
 GetCapitalIntent what the capital of {country} is
 GetCapitalIntent what the capital city of {country} is
 
-GetCountryIntent what country has the capital {country}
-GetCountryIntent what country has the capital city {country}
+GetCountryIntent what country has the capital {capital}
+GetCountryIntent what country has the capital city {capital}
 GetCountryIntent the city {capital} is the capital of which country
 GetCountryIntent the city {capital} is the capital city of which country
 GetCountryIntent {capital} is the capital of which country
