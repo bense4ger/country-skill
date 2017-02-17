@@ -12,16 +12,20 @@ const logErr = (data) => {
 };
 
 const handlers = {
+    'LaunchIntent': function () {
+       const welcome = this.t('WELCOME_MESSAGE');
+       const repromt = this.t('WELCOME_REPROMPT');
+    },
     'AMAZON.HelpIntent': function () {
-        const speechOutput = this.t("HELP_MESSAGE");
-        const reprompt = this.t("HELP_MESSAGE");
+        const speechOutput = this.t('HELP_MESSAGE');
+        const reprompt = this.t('HELP_MESSAGE');
         this.emit(':ask', speechOutput, reprompt);
     },
     'AMAZON.CancelIntent': function () {
-        this.emit(':tell', this.t("STOP_MESSAGE"));
+        this.emit(':tell', this.t('STOP_MESSAGE'));
     },
     'AMAZON.StopIntent': function () {
-        this.emit(':tell', this.t("STOP_MESSAGE"));
+        this.emit(':tell', this.t('STOP_MESSAGE'));
     },
     'Unhandled': function () {
         logErr('Unhandled');
