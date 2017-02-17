@@ -5,7 +5,7 @@ deploy:
   runtime: nodejs4.3
   function_name: CountrySkill
   role: arn:aws:iam::503962799038:role/service-role/lambda_basic_execution
-  handler_name: index.handler
+  handler_name: handler
   access_key_id: AKIAJZGBN3HE5DQTO3OQ
   secret_access_key:
     secure: OW1ore3zFyWM/a3chbAe93JZSfqhUo1G2ezFfY/fOjuc/qqGiYIjmZQPbEDOcka2AnhDOj9GFUMAPqsMe5HDsyxW4T6FeMUkA11p8W5i5NX1Qx5KrNoOD6CBNMmMNLOrtt8/kZbR75kpMdlN+u5tb9uxQAJL8fj5wR0fLdlKzK0tRx+ZYRn/nGRFsc5ggowpUXfjPCMsdm1ZQTphp0WRxJujGunhN/OH5AuHqMzJSxk6sfyoqVhPSeF98orsCEJUJOUQOnWW1ZsJiwwumzoswdC5mALceiPBrJZMGQG/1zQgsHQ3jsxu0Wv3QWB1V4Hhw4j9Z8rQTc3lFHkqkMzccDpbTmMZHLV5TFsnY99xGlDRrDRMTuSXaQNdin1eomv9rQDkPNg9U9xWwRgkjLnv+2OAqjTNBH9exFa29+chGm3FNigSL5nWLVqaduoomMC/JzBcWLpw5mD5UEIbV04t2a3PDgG9pyRxElAV1uYvkRq0ssXi5zIgas4AJdDH38zqW2hpt24Eoxkpv6qb7k5gvEb6hqvR48r5/s1Lu1lf0c/2w+OOifd8JRP3ZPwYk/TTB3xz5NBdU7KlY0/flCgZJvWeb+EVuUvDSGY/qWl4CpglbwZV/YNXE74cpCemuICF4pN+lAW32AE2QlqUP/n6b9bXht/v0VBYVqAnqaFcQiI=

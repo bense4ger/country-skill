@@ -15,7 +15,7 @@ const handlers = {
     'LaunchRequest': function () {
        const welcome = this.t('WELCOME_MESSAGE');
        const repromt = this.t('WELCOME_REPROMPT');
-
+       
        this.emit(':ask', welcome, repromt);
     },
     'AMAZON.HelpIntent': function () {
