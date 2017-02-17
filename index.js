@@ -12,9 +12,11 @@ const logErr = (data) => {
 };
 
 const handlers = {
-    'LaunchIntent': function () {
+    'LaunchRequest': function () {
        const welcome = this.t('WELCOME_MESSAGE');
        const repromt = this.t('WELCOME_REPROMPT');
+
+       this.emit(':ask', welcome, repromt);
     },
     'AMAZON.HelpIntent': function () {
         const speechOutput = this.t('HELP_MESSAGE');
@@ -77,7 +79,7 @@ const handlers = {
                     .then((response) => {
                         logInfo(response);
                         if (response[0] !== undefined && response[0].name !== undefined) {
-                            const result = responder.success(this.t('COUNTRY_RESPONSE'), capital, response[0].name);
+                            const result = responder.success(this.t('COUNTRY_RESPONSE'), response[0].name, capital);
                             this.emit(':tell', result);
                         } else {
                             this.emit(':tell', responder.failure(this.t('NOT_FOUND_RESPONSE')));
